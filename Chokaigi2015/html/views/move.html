@@ -1,0 +1,26 @@
+<div class="row" ng-controller="MoveCtrl as ctrl">
+    <div class="small-3 small-centered columns">
+        <div class="button controlpad"
+             hm-swipe="ctrl.panstart($event)"
+             hm-panstart="ctrl.panstart($event)"
+             hm-picth="ctrl.panstart($event)"
+             hm-pan="ctrl.panstart($event)"
+             hm-panend="ctrl.panend($event)"
+             hm-tap="ctrl.stop($event)"
+             hm-rotate="ctrl.handleRotationGesture($event)">
+            <span>Control Pad (Tablet Only)</span>
+        </div>
+
+        <pre>{{ctrl.msg}}</pre>
+    </div>
+</div>
+
+<style>
+    div.controlpad {
+        width: 30rem;
+        height: 30rem;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+    }
+</style>
