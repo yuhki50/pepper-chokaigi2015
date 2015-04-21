@@ -1,0 +1,11 @@
+bower_components/
+/node_modules/
+/typings/
+/tmp/
+
+/.idea
+*.iml
+
+app.js
+.DS_Store
+
