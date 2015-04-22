@@ -1,0 +1,36 @@
+{
+  "version": "v4",
+  "repo": "borisyankov/DefinitelyTyped",
+  "ref": "master",
+  "path": "typings",
+  "bundle": "typings/tsd.d.ts",
+  "installed": {
+    "gulp/gulp.d.ts": {
+      "commit": "25da006de5de3d2e31252fdc988296c7c212f231"
+    },
+    "node/node.d.ts": {
+      "commit": "25da006de5de3d2e31252fdc988296c7c212f231"
+    },
+    "jquery/jquery.d.ts": {
+      "commit": "de18109f44d99864a19441509a3fc876adba68e9"
+    },
+    "angularjs/angular.d.ts": {
+      "commit": "de18109f44d99864a19441509a3fc876adba68e9"
+    },
+    "socket.io-client/socket.io-client.d.ts": {
+      "commit": "25da006de5de3d2e31252fdc988296c7c212f231"
+    },
+    "angular-ui-router/angular-ui-router.d.ts": {
+      "commit": "de18109f44d99864a19441509a3fc876adba68e9"
+    },
+    "angularjs/angular-sanitize.d.ts": {
+      "commit": "de18109f44d99864a19441509a3fc876adba68e9"
+    },
+    "hammerjs/hammerjs.d.ts": {
+      "commit": "de18109f44d99864a19441509a3fc876adba68e9"
+    },
+    "touch-events/touch-events.d.ts": {
+      "commit": "de18109f44d99864a19441509a3fc876adba68e9"
+    }
+  }
+}
