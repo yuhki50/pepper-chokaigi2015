@@ -1,0 +1,14 @@
+<div class="row" ng-controller="AnimationCtrl as ctrl">
+    <a href="#" class="button expand" ng-click="ctrl.playRandomMotion()">1モーション　ランダム</a>
+
+    <a href="#" class="button expand" ng-click="ctrl.startIntervalPlayRandomMotion()">全モーション ランダム スタート</a>
+    <a href="#" class="button expand" ng-click="ctrl.stopIntervalPlayRandomMotion()">全モーション ランダム ストップ</a>
+
+    <tabset>
+        <tab ng-repeat="animationTabItem in ctrl.animationTabItems" heading="{{animationTabItem.title}}" active="animationTabItem.active">
+            <div class="button-group" ng-repeat="animationBehaviorItem in animationTabItem.animationBehaviorItems">
+                <a href="#" class="button expand" ng-class="animationBehaviorItem.buttonClass" ng-click="ctrl.playMotion(animationBehaviorItem)" ng-cloak>{{animationBehaviorItem.name}}</a>
+            </div>
+        </tab>
+    </tabset>
+</div>

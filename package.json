@@ -1,0 +1,37 @@
+{
+  "name": "Pepper-Chokaigi2015",
+  "description": "desc",
+  "version": "1.0.0",
+  "author": {
+    "name": "yuhki50",
+    "email": "yuhki50@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/yuhki50/pepper-chokaigi2015/issues"
+  },
+  "dependencies": {
+    "bower": "^1.4.1",
+    "gulp": "^3.8.11",
+    "gulp-concat": "^2.5.2",
+    "gulp-typescript": "^2.6.0",
+    "require-dir": "^0.3.0",
+    "tsd": "^0.5.7",
+    "typescript": "^1.5.0-alpha",
+    "typescript-require": "^0.2.8"
+  },
+  "homepage": "https://github.com/yuhki50/pepper-chokaigi2015",
+  "keywords": [
+    "pepper"
+  ],
+  "license": "MIT",
+  "main": "chokaigi2015/html/js/app.js",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yuhki50/pepper-chokaigi2015.git"
+  },
+  "scripts": {
+    "postinstall": "bower install; tsd reinstall -rosa; gulp typescript:compile:js:release",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

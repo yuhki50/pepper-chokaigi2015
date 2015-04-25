@@ -1,0 +1,47 @@
+<div ng-controller="SystemCtrl as ctrl">
+    <div class="row">
+        <h4>ALAutonomousLife</h4>
+        <div class="switch round large">
+            <input id="ALAutonomousLife" type="checkbox" ng-model="ctrl.ALAutonomousLifeState" ng-change="ctrl.ALAutonomousChange(ctrl.ALAutonomousLifeState)">
+            <label for="ALAutonomousLife"></label>
+        </div>
+    </div>
+
+    <div class="row" style="margin-top:3rem;">
+        <h4>Human Tracker</h4>
+        <ul class="button-group">
+            <li><a href="#" class="button success" ng-click="ctrl.humanTrackerChange(true)">ON</a></li>
+            <li><a href="#" class="button alert" ng-click="ctrl.humanTrackerChange(false)">OFF</a></li>
+        </ul>
+    </div>
+
+    <div class="row" style="margin-top:3rem;">
+        <h4>Breath</h4>
+        <ul class="button-group">
+            <li><a href="#" class="button success" ng-click="ctrl.breathChange(true)">ON</a></li>
+            <li><a href="#" class="button alert" ng-click="ctrl.breathChange(false)">OFF</a></li>
+        </ul>
+    </div>
+
+    <div class="row" style="margin-top:3rem;">
+        <h4>Breath</h4>
+        <ul class="button-group">
+            <li><a href="#" class="button success" ng-click="ctrl.unlockSafetyChange(true)">ON</a></li>
+            <li><a href="#" class="button alert" ng-click="ctrl.unlockSafetyChange(false)">OFF</a></li>
+        </ul>
+    </div>
+
+    <div class="row" style="margin-top:3rem;">
+        <ul class="button-group">
+            <li><a href="#" class="button success" ng-click="ctrl.wakeup()">Wakeup</a></li>
+            <li><a href="#" class="button alert" ng-click="ctrl.rest()">Sleep</a></li>
+        </ul>
+    </div>
+
+    <div class="row" style="margin-top:3rem;">
+        <h4>Pose</h4>
+        <ul class="button-group">
+            <li><a href="#" class="button" ng-click="ctrl.stand()">Stand</a></li>
+        </ul>
+    </div>
+</div>
